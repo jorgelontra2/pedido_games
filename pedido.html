@@ -26,14 +26,14 @@
                     <input type="number" id="valor" class="form-control">
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary">Adicionar</button>
+                    <button type="button" class="btn btn-primary" onclick="adicionar()">Adicionar</button>
                 </div>
             </fieldset>
         </form>
 
         
     <div class="mt-5">
-        <table class="table">
+        <table id="lista-produtos" class="table">
             <thead>
               <tr>
                 <th scope="col">Codigo</th>
@@ -45,8 +45,17 @@
             <tbody>
               
             </tbody>
-          </table>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td id="total"></td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
+
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="pedido.js"></script>
 </body>
 
 </html>
